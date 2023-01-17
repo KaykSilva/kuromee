@@ -262,11 +262,11 @@ module.exports = Kurome = async (Kurome, m, chatUpdate, store) => {
 
         //group target by xeon\\
         const reply = (teks) => {
-            Kurome.sendMessage(m.chat, { text: teks, contextInfo: { "externalAdReply": { "title": ` ${global.botname}`, "body": ` Join Bot's Official GC`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`), "sourceUrl": "https://chat.whatsapp.com/GnC5UzmFfGwBtrVmTML0xd" } } }, { quoted: m })
+            Kurome.sendMessage(m.chat, { text: teks, contextInfo: { "externalAdReply": { "title": ` ${global.botname}`, "body": ` Join Bot's Official GC`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": fs.readFileSync(`./KuromeMedia/cheemspic.jpg`), "sourceUrl": "https://chat.whatsapp.com/GnC5UzmFfGwBtrVmTML0xd" } } }, { quoted: m })
         }
 
         const replay = (teks) => {
-            Kurome.sendMessage(m.chat, { text: teks, contextInfo: { "externalAdReply": { "title": ` ${global.botname}`, "body": ` Join Bot's Official GC`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`), "sourceUrl": "https://chat.whatsapp.com/GnC5UzmFfGwBtrVmTML0xd" } } }, { quoted: m })
+            Kurome.sendMessage(m.chat, { text: teks, contextInfo: { "externalAdReply": { "title": ` ${global.botname}`, "body": ` Join Bot's Official GC`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": fs.readFileSync(`./KuromeMedia/cheemspic.jpg`), "sourceUrl": "https://chat.whatsapp.com/GnC5UzmFfGwBtrVmTML0xd" } } }, { quoted: m })
         }
 
         //Public & Self\\
@@ -354,25 +354,25 @@ module.exports = Kurome = async (Kurome, m, chatUpdate, store) => {
         //auto reply by xeon 🦄
         for (let anji of setik) {
             if (budy === anji) {
-                result = fs.readFileSync(`./XeonMedia/sticker/${anji}.webp`)
+                result = fs.readFileSync(`./KuromeMedia/sticker/${anji}.webp`)
                 Kurome.sendMessage(m.chat, { sticker: result }, { quoted: m })
             }
         }
         for (let anju of vien) {
             if (budy === anju) {
-                result = fs.readFileSync(`./XeonMedia/vn/${anju}.mp3`)
+                result = fs.readFileSync(`./KuromeMedia/vn/${anju}.mp3`)
                 Kurome.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
             }
         }
         for (let anjh of imagi) {
             if (budy === anjh) {
-                result = fs.readFileSync(`./XeonMedia/image/${anjh}.jpg`)
+                result = fs.readFileSync(`./KuromeMedia/image/${anjh}.jpg`)
                 Kurome.sendMessage(m.chat, { image: result }, { quoted: m })
             }
         }
         for (let anjh of videox) {
             if (budy === anjh) {
-                result = fs.readFileSync(`./XeonMedia/vid/${anjh}.mp4`)
+                result = fs.readFileSync(`./KuromeMedia/vid/${anjh}.mp4`)
                 Kurome.sendMessage(m.chat, { video: result }, { quoted: m })
             }
         }
@@ -389,6 +389,7 @@ module.exports = Kurome = async (Kurome, m, chatUpdate, store) => {
         const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
 
         //Respon Cmd with media\\
+        
 
         const { isFiltered, addFilter } = require('./lib/antispam.js')
 
