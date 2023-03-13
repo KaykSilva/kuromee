@@ -3142,8 +3142,6 @@ Report Message: ${text}`
 │✙ Bot: ${global.botname}
 │✙ Dono: ${global.ownername}
 │✙ Número: ${global.owner}
-│✙ Dona: ${global.ownername2}
-│✙ Número: ${global.owner2}
 │✙ Plataforma : ${os.platform()}
 │✙ Clientes ativos agora:  ${Object.keys(global.db.data.users).length}
 └───────────────┈ ⳹
@@ -3179,8 +3177,6 @@ Report Message: ${text}`
 │✙ Bot: ${global.botname}
 │✙ Dono: ${global.ownername}
 │✙ Número: ${global.owner}
-│✙ Dona: ${global.ownername2}
-│✙ Número: ${global.owner2}
 │✙ Plataforma : ${os.platform()}
 │✙ Clientes ativos agora: ${Object.keys(global.db.data.users).length}
 └───────────────┈ ⳹

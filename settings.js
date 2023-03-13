@@ -12,11 +12,9 @@ global.APIKeys = {
 }
 
 global.owner = ['556796564460']
-global.owner2 = ['5521966851369']
 global.premium = ['556796564460']
 global.ownernomer = '556796564460'
-global.ownername = 'Shun'
-global.ownername2 = 'Julya'
+global.ownername = 'Kayk'
 global.botname = 'Kurome'
 global.footer = 'KUROME BOT'
 global.ig = 'https://github.com/KaykSilva'
